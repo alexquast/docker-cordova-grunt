@@ -5,4 +5,4 @@ services:
 
 script:
   - docker build -t alexquast/docker-cordova-grunt .
-  - docker run alexquast/docker-cordova-grunt /bin/sh -c "cordova create test && cd test && cordova platform add android && cordova build android && grunt && bower && git"
+  - docker run alexquast/docker-cordova-grunt /bin/sh -c "cordova create test && cd test && cordova platform add android && cordova build android && grunt --version && bower --version && git --version"
